@@ -1,5 +1,6 @@
 function [r_1, p_1] = firstParCorr(n, r, m)
 % Compute first order partial correlation
+%
 % Inputs:
 % 'n'    number of variables
 % 'r'    Pearson's correlation matrix
@@ -7,6 +8,13 @@ function [r_1, p_1] = firstParCorr(n, r, m)
 % Outputs:
 % 'r_1'  first order partial correlation matrix
 % 'p_1'  first order partial correlation p-value matrix 
+%
+% References:
+% [1] Zuo, Yiming, Guoqiang Yu, Mahlet G. Tadesse, and Habtom W. Ressom. 
+%     Biological network inference using low order partial correlation. 
+%     Methods 69, no. 3 (2014): 266-273.
+%
+% Copyright 2014-2016, Yiming Zuo.
 
 % first-order partial correlation
 r_1 = ones(n,n); % r_1 is by default set to 1

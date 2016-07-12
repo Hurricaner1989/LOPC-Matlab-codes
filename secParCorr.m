@@ -1,5 +1,6 @@
 function [r_2, p_2] = secParCorr(n, r, m)
 % Compute second order partial correlation
+%
 % Inputs:
 % 'n'    number of variables
 % 'r'    Pearson's correlation matrix
@@ -7,6 +8,13 @@ function [r_2, p_2] = secParCorr(n, r, m)
 % Outputs:
 % 'r_2'  second order partial correlation matrix
 % 'p_2'  second order partial correlation p-value matrix 
+%
+% References:
+% [1] Zuo, Yiming, Guoqiang Yu, Mahlet G. Tadesse, and Habtom W. Ressom. 
+%     Biological network inference using low order partial correlation. 
+%     Methods 69, no. 3 (2014): 266-273.
+%
+% Copyright 2014-2016, Yiming Zuo.
 
 % first-order partial correlation
 r1 = ones(n, n, n); % r1 is by default set to 1
