@@ -1,6 +1,10 @@
 function [r_2, p_2] = lopc(data, thres)
 % Implement LOPC algorithm to build networks based on low order partial
 % correlation up to the second order
+%
+% Depend on mafdr function from bioinformatics toolbox
+% Depend on normcdf function from statistics and machine learning toolbox
+%
 % Input parameters:
 %     'data'    An m \times n numeric matrix, where m is the number of
 %               samples and n is the number of features.

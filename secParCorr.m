@@ -1,6 +1,8 @@
 function [r_2, p_2] = secParCorr(n, r, m)
 % Compute second order partial correlation
 %
+% Depend on normcdf function from statistics and machine learning toolbox
+%
 % Inputs:
 % 'n'    number of variables
 % 'r'    Pearson's correlation matrix

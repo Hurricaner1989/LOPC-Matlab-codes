@@ -4,16 +4,13 @@
 %% Start clean
 clc; clear; close all;
 
-%% Read in proteomic data
+%% Read in proteomic data 
 % make sure pwd is LOPC matlab package
 pwd 
 % set the working directory to where the data is
 cd 'Data'
-% read in protein names
-filename = 'ProteinRowNames.csv';
-[info, title] = xlsread(filename);
 % prepare proteomic data
-[peakProtein, idProtein] = mergeProtein();
+[peakProtein, ~] = readProtein();
 % normalization
 peakProtein_n = [];
 peakProtein_n = (peakProtein - repmat(mean(peakProtein,2),1,size(peakProtein,2))) ...
@@ -23,7 +20,7 @@ cd '..'
 % make sure pwd is LOPC matlab package
 pwd
 
-%% 0-th partial correlation
+%% 0-th partial correlation (Pearson's correlation)
 n = size(peakProtein_n, 1); % variable number
 m = size(peakProtein_n, 2); % sample size
 [r, p] = corrcoef(peakProtein_n'); % Pearson's correlation

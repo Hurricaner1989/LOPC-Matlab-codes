@@ -1,6 +1,8 @@
 function [r_1, p_1] = firstParCorr(n, r, m)
 % Compute first order partial correlation
 %
+% Depend on normcdf function from statistics and machine learning toolbox
+%
 % Inputs:
 % 'n'    number of variables
 % 'r'    Pearson's correlation matrix

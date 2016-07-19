@@ -1,7 +1,7 @@
 function p_adjusted = falseDiscoveryRate(n, p)
 % Compute adjusted p-value matrix based on FDR from p-value matrix
 % 
-% Depdents on mafdr function from bioinformatics toolbox
+% Depend on mafdr function from bioinformatics toolbox
 % 
 % Inputs:
 % 'N'    number of variables
