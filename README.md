@@ -1,6 +1,6 @@
-# LOPC Matlab package
+# LOPC Matlab codes
 
-This package implements LOPC algorithm from Zuo *et*. *al*.'s Methods paper: **Biological network inference using low order partial correlation** (PMID: 25003577). It contains four Matlab functions (i.e., **falseDiscoveryRate.m**, **firstParCorr.m**, **secParCorr.m**, **lopc.m**) and one demo (i.e., **demo.m** and files in Data folder). 
+These codes implement LOPC algorithm from Zuo *et*. *al*.'s Methods paper: **Biological network inference using low order partial correlation** (PMID: 25003577). It contains four Matlab functions (i.e., **falseDiscoveryRate.m**, **firstParCorr.m**, **secParCorr.m**, **lopc.m**) and one demo (i.e., **demo.m** and files in Data folder). 
 
 ## Update
 
